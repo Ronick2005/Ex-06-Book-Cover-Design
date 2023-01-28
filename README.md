@@ -1,6 +1,12 @@
 # Ex-06-Book-Cover-Design
+## AIM
+### To design a book cover page using HTML and CSS
+## Design Procedure
+### Step 1: Clone the GitHub repository and create a Django admin interface.
+### Step 2: Write HTML and CSS Code for desiging book cover page and excute them.
 ## Program
 ```
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -96,19 +102,19 @@
                 >> HTML and CSS Combined with Django Architecture
             </div>
             <div class="mypic">
-                <img src="my.png" width="110" height="125" alt="">
+                <img src="{% static 'my.png' %}" width="110" height="125" alt="">
             </div>
             <div class="author">
                <p><b>Ronick Aakshath</b></p>
             </div>
             <div class="vect">
-                <img src="html.png" width="80" height="80">
-                <img src="css.png" width="80" height="80">
-                <img src="js.png" width="80" height="80">
-                <img src="django.png" width="80" height="80">
+                <img src="{% static 'html.png' %}" width="80" height="80">
+                <img src="{% static 'css.png' %}" width="80" height="80">
+                <img src="{% static 'js.png' %}" width="80" height="80">
+                <img src="{% static 'django.png' %}" width="80" height="80">
             </div>
             <div class="webvector">
-                <img src="webdevbg.png" width="150" height="150">
+                <img src="{% static 'web-development-image-01.png' %}" width="150" height="150">
             </div>
             <div class="ed">
                 <b>Seventh Edition</b>
@@ -118,4 +124,6 @@
 </html>
 ```
 ## Output
-![](output.png)
+![](bcd_output.png)
+## Result
+### Thus we designed a book cover page using HTML and CSS is executed and the output is verified
